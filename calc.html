@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        header {
+            margin: 30px auto;
+            text-align: center;
+        }
+        form {
+            width: 370px;
+            height: 435px;
+            background-color: #3ea4ec;
+            margin: 60px auto;
+        }
+        input {
+            height: 70px;
+            width: 90px;
+            border: 2px solid #464646;
+            font-size: 30px;
+            background-color: #6ef55c;
+        }
+        input.screen {
+            width: 100%;
+            background-color:rgb(31, 30, 30);
+            font-size: 60px;
+            color: white;
+            padding: 5px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <h1>Mini-project</h1>
+            <h2>Calculatrice</h2>
+            <br>
+            <h4>By Taoufik MAAIDNI</h4>
+        </header>
+        <form name="calculator" >
+            
+            <table>
+                <tr>
+                    <td colspan="4"><input type="textfield" name="ans" value="" class="screen"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="CE"></td>
+                    <td><input type="button" value="()" onClick="document.calculator.ans.value+=')'"></td>
+                    <td><input type="button" value="%" onClick="document.calculator.ans.value+='%'"></td>
+                    <td ><input type="button" value="+" onClick="document.calculator.ans.value+='+'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onClick="document.calculator.ans.value+='7'"></td>
+                    <td><input type="button" value="8" onClick="document.calculator.ans.value+='8'"></td>
+                    <td><input type="button" value="9" onClick="document.calculator.ans.value+='9'"></td>
+                    <td ><input type="button" value="-" onClick="document.calculator.ans.value+='-'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onClick="document.calculator.ans.value+='4'"></td>
+                    <td><input type="button" value="5" onClick="document.calculator.ans.value+='5'"></td>
+                    <td><input type="button" value="6" onClick="document.calculator.ans.value+='6'"></td>
+                    <td ><input type="button" value="x" onClick="document.calculator.ans.value+='*'"></td>
+                    
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onClick="document.calculator.ans.value+='1'"></td>
+                    <td><input type="button" value="2" onClick="document.calculator.ans.value+='2'"></td>
+                    <td><input type="button" value="3" onClick="document.calculator.ans.value+='3'"></td>
+                    <td ><input type="button" value="÷" onClick="document.calculator.ans.value+='/'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onClick="document.calculator.ans.value+='0'"></td>
+                    <td><input type="button" value="+/-" onClick="document.calculator.ans.value+='(-'"></td>
+                    <td><input type="button" value="." onClick="document.calculator.ans.value+='.'"></td>
+                    <td><input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="equal"></td>
+                </tr>
+            </table>
+        </form>
+        <footer>
+            <p>Technologies du web | Filière : Sciences Mathématiques et Informatique (SMI) | Faculté  Polydisciplinaire de Khouribga ( FPK) | Année universitaire 2020/2021
+            </p>
+        </footer>
+</body>
+</html>
